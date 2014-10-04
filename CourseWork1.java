@@ -9,25 +9,60 @@ public class Coursework1 {
         final int LENGTH = 100;
         int[] array1 = new int[LENGTH];
         int[] array2 = new int[LENGTH];
-        int sentinel = 0;
-        int currentSize1 = 0;
-        int currentSize2 = 0;
-
         Scanner input = new Scanner(System.in);
+        
 
-        System.out.print("Please insert data for array 1: ");
-        while (input.hasNextInt()) {
-            for(int i = 0; i < LENGTH; i++){
-            array1[i] = input.nextInt();
-
-            System.out.print("A porra eh essa: " + array1[i] + ",");
+            for(int i = 0; i < array1.length; i++){
+            	System.out.print("Please insert data for array 1 (0 to quit): ");
+            	array1[i]  = input.nextInt();
+            	if(array1[i] == 0){
+            		break;	
+            	}
             }
-
-            //System.out.print(" ");
-
-
-        }
+            
+            for(int i = 0; i < array2.length; i++){
+            	System.out.print("Please insert data for array 2 (0 to quit): ");
+            	array2[i]  = input.nextInt();
+            	if(array2[i] == 0){
+            		break;	
+            	}	
+            }
+            	
        
-    }
-}
+            
+            System.out.print("\nValues for array 1 is: ");
+            for(int i = 0; i < array1.length; i++){
+            	if(array1[i] != 0){
+            		System.out.print(array1[i] + " ");
+            	}	
+            }
+            
+            System.out.print("\nValues for array 2 is: ");
+            for(int i = 0; i < array2.length; i++){
+            	if(array2[i] != 0){
+            		System.out.print(array2[i] + " ");
+            	}
+            }
+            
+            //int[] common = new int[100];
+            System.out.print("\nCommon data is: ");
+            for(int i = 0; i < array1.length; i++){
+            	for(int j = 0; j < array2.length; j++){
+            		if(array1[i] == array2[j]){
+            			 array1[i] = array1[i];
+            			 if(array1[i] != 0){
+                     		System.out.print(array1[i] + " ");
+                     	}
+            		}
+            	}
+            }	
+            
+		}  
+                
+	}
 
+
+       
+    
+
+ 
