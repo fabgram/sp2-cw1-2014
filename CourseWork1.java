@@ -11,7 +11,7 @@ public class Coursework1 {
 	
 	public static void main(String[] args) {
 		
-		final int LENGTH = 100;//constant to array size, easy to change later if necessary 
+		final static int LENGTH = 100;//constant to array size, easy to change later if necessary 
         int[] array1 = new int[LENGTH];//creates and initializes array 1 to size previously stated
         int[] array2 = new int[LENGTH];//creates and initializes array 2 to size previously stated
         int flag = -1;//variable to be used as the user input
